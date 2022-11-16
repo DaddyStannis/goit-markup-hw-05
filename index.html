@@ -30,20 +30,20 @@
           <nav class="header-menu">
             <ul class="header-items">
               <li class="header-item">
-                <a class="item header-link active" href="index.html" rel="html"
+                <a
+                  class="item header-nav-link active"
+                  href="index.html"
+                  rel="html"
                   >Студія</a
                 >
               </li>
               <li>
-                <a
-                  class="item menu-item header-link"
-                  href="portfolio.html"
-                  rel="html"
+                <a class="item header-nav-link" href="portfolio.html" rel="html"
                   >Портфоліо</a
                 >
               </li>
               <li class="header-item">
-                <a class="item menu-item header-link" href="">Контакти</a>
+                <a class="item header-nav-link" href="">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -52,7 +52,7 @@
         <ul class="header-contacts">
           <li class="header-contact">
             <a
-              class="item contact header-link"
+              class="item contact header-contact-link"
               href="mailto:info@devstudio.com"
             >
               <svg class="contact-icon" width="16" height="12">
@@ -62,7 +62,7 @@
             </a>
           </li>
           <li class="header-contact">
-            <a class="item contact header-link" href="tel:+380961111111">
+            <a class="item header-contact-link" href="tel:+380961111111">
               <svg class="contact-icon" width="10" height="16">
                 <use href="./images/svg/icons.svg#icon-telephone"></use>
               </svg>
@@ -78,7 +78,7 @@
         <div class="overlay">
           <div class="container hero-container">
             <h1 class="hero-slogan">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button hero-button" type="button">
+            <button class="button hero-button" type="button" data-modal-open>
               Замовити послугу
             </button>
           </div>
@@ -131,6 +131,7 @@
                 width="370"
                 height="294"
               />
+              <strong class="what-we-do-description">десктопні додатки</strong>
             </li>
             <li class="what-we-do-item">
               <img
@@ -139,6 +140,7 @@
                 width="370"
                 height="294"
               />
+              <strong class="what-we-do-description">мобільні додатки</strong>
             </li>
             <li class="what-we-do-item">
               <img
@@ -147,6 +149,9 @@
                 width="370"
                 height="294"
               />
+              <strong class="what-we-do-description"
+                >дизайнерські рішення</strong
+              >
             </li>
           </ul>
         </div>
@@ -421,51 +426,51 @@
         </div>
       </section>
 
-      <section class="customers section">
+      <section class="customer section">
         <div class="container">
           <h2 class="subtitle">Постійні клієнти</h2>
 
-          <ul class="customers-list">
-            <li class="customers-item" href="/">
-              <a class="customers-link" href="/">
-                <svg class="customers-icon" width="106" height="60">
+          <ul class="customer-list">
+            <li class="customer-item" href="/">
+              <a class="customer-link" href="/">
+                <svg class="customer-icon" width="106" height="60">
                   <use href="./images/svg/icons.svg#icon-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
-              <a class="customers-link" href="/">
-                <svg class="customers-icon" width="106" height="60">
+            <li class="customer-item">
+              <a class="customer-link" href="/">
+                <svg class="customer-icon" width="106" height="60">
                   <use
                     href="./images/svg/icons.svg#icon-tag-line-here-company"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
-              <a class="customers-link" href="/">
-                <svg class="customers-icon" width="106" height="60">
+            <li class="customer-item">
+              <a class="customer-link" href="/">
+                <svg class="customer-icon" width="106" height="60">
                   <use href="./images/svg/icons.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
-              <a class="customers-link" href="/">
-                <svg class="customers-icon" width="106" height="60">
+            <li class="customer-item">
+              <a class="customer-link" href="/">
+                <svg class="customer-icon" width="106" height="60">
                   <use href="./images/svg/icons.svg#icon-foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
-              <a class="customers-link" href="/">
-                <svg class="customers-icon" width="106" height="60">
+            <li class="customer-item">
+              <a class="customer-link" href="/">
+                <svg class="customer-icon" width="106" height="60">
                   <use href="./images/svg/icons.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
-              <a class="customers-link" href="/">
-                <svg class="customers-icon" width="106" height="60">
+            <li class="customer-item">
+              <a class="customer-link" href="/">
+                <svg class="customer-icon" width="106" height="60">
                   <use
                     href="./images/svg/icons.svg#icon-tag-line-company"
                   ></use>
@@ -475,13 +480,12 @@
           </ul>
         </div>
       </section>
-      >
     </main>
 
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-links">
-          <a class="footer-logo link" href="index.html" rel="html"
+          <a class="footer-logo" href="index.html" rel="html"
             ><span class="footer-logo-left">Web</span
             ><span class="footer-logo-right">Studio</span></a
           >
@@ -490,12 +494,10 @@
             <div class="footer-contacts">
               <p class="footer-address-str">м. Київ, пр-т Лесі Українки, 26</p>
 
-              <a
-                class="footer-address-link link"
-                href="mailto:info@devstudio.com"
+              <a class="footer-address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
-              <a class="footer-address-link link" href="tel:+380961111111"
+              <a class="footer-address-link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </div>
@@ -560,5 +562,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="customer-icon" width="11" height="11">
+            <use href="./images/svg/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
