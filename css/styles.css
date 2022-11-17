@@ -155,6 +155,8 @@ header {
 
 .contact-icon {
   fill: currentColor;
+
+  transition: fill var(--transitions-time) var(--transitions);
 }
 
 .header-contact-link:hover,
@@ -393,6 +395,8 @@ header {
 
 .network-icon {
   fill: currentColor;
+
+  transition: fill var(--transitions-time) var(--transitions);
 }
 
 .network-link:hover,
@@ -439,6 +443,8 @@ header {
 
 .customer-icon {
   fill: currentColor;
+
+  transition: fill var(--transitions-time) var(--transitions);
 }
 
 .filter-items {
